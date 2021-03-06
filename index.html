@@ -6,8 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
   </head>
   <body>
-    <h1>html5です</h1>
+    <div class="container">
+      <h1>html5です</h1>
+
+      <button
+        id="btn4"
+        type="button"
+        class="btn btn-primary"
+        style="width: 100px"
+      >
+        開始
+      </button>
+    </div>
+
+    <script src="static/js/jquery-3.6.0.min.js"></script>
+
+    <script>
+      //開始ボタン
+      $("#btn4").on("click", function () {
+        console.log("aaa");
+      });
+    </script>
   </body>
 </html>
